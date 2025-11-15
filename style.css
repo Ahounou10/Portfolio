@@ -34,11 +34,10 @@ nav {
 nav ul {
     display: flex;
     gap: 25px;
-    list-style: none;         /* Enlève les puces */
+    list-style: none;         
     margin: 0;
     padding: 0;
 }
-
 
 nav a {
     text-decoration: none;
@@ -48,9 +47,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #007bff;            /* Bleu électrique au hover */
+    color: #007bff;           
 }
-
 
 /* HERO */
 .hero {
@@ -111,6 +109,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 .skill-card {
@@ -181,4 +180,124 @@ nav a:hover {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Burger menu */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    
+}
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px) {
+    .apropos-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .skills-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .apropos img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .skills-grid, .apropos-container {
+        gap: 15px;
+    }
+}
+
+ @media screen and (max-width: 768px) {
+    nav {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 8%;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        z-index: 1;
+        
+        flex-direction: column;
+        background: #ecf0fc;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #eee;
+        padding-bottom: 15px;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
 }
