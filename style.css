@@ -22,6 +22,20 @@ body {
     margin-bottom: 40px;
 }
 
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
+
 /* NAV */
 nav {
     display: flex;
@@ -70,6 +84,48 @@ nav a:hover {
     color: #444;
 }
 
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 0 5%;
+        min-height: 100vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        padding: 0 4%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.1rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+}
+
 .btn {
     background: #007bff;
     padding: 12px 25px;
@@ -97,6 +153,54 @@ nav a:hover {
     border-radius: 100%;
     object-fit: cover;
     border: 4px solid #007bff;
+    flex-shrink: 0;
+}
+
+.apropos-container div p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .apropos {
+        padding: 60px 8%;
+    }
+
+    .apropos-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .apropos img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .apropos {
+        padding: 40px 5%;
+    }
+
+    .apropos-container div p {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .apropos {
+        padding: 30px 4%;
+    }
+
+    .apropos img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .apropos-container div p {
+        font-size: 0.9rem;
+    }
 }
 
 /* SKILLS */
@@ -119,6 +223,66 @@ nav a:hover {
     width: 28%;
     text-align: center;
     box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.skill-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .skills {
+        padding: 60px 8%;
+    }
+
+    .skills-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 85%;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills {
+        padding: 40px 5%;
+    }
+
+    .skill-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .skill-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .skill-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills {
+        padding: 30px 4%;
+    }
+
+    .skill-card {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .skill-card h3 {
+        font-size: 1rem;
+    }
 }
 
 /* PROJETS */
@@ -150,6 +314,17 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
 .tags {
     margin: 8px 0;
     font-size: .9rem;
@@ -162,12 +337,107 @@ nav a:hover {
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
+    display: inline-block;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.btn-small:hover {
+    background: #0056cc;
+}
+
+@media screen and (max-width: 1024px) {
+    .projets {
+        padding: 60px 8%;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projets {
+        padding: 40px 5%;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .project-card h3 {
+        font-size: 1rem;
+    }
+
+    .project-card p {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projets {
+        padding: 30px 4%;
+    }
+
+    .project-card {
+        padding: 12px;
+    }
+
+    .project-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .tags {
+        font-size: 0.8rem;
+    }
+
+    .btn-small {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
 }
 
 /* CONTACT */
 .contact {
     padding: 90px 8%;
     text-align: center;
+}
+
+.contact p {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact {
+        padding: 60px 8%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        padding: 40px 5%;
+    }
+
+    .contact p {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact {
+        padding: 30px 4%;
+    }
+
+    .contact p {
+        font-size: 0.9rem;
+    }
 }
 
 /* ANIMATIONS APPARITION */
@@ -299,5 +569,102 @@ nav a:hover {
 
     .burger {
         display: flex;
+    }
+}
+
+/* MODAL ZOOM */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s;
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    animation: zoomIn 0.3s;
+    border-radius: 8px;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1001;
+}
+
+.close:hover {
+    color: #bbb;
+}
+
+/* Images cliquables */
+img[src*="images/"] {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+img[src*="images/"]:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .modal-content {
+        max-width: 95%;
+        max-height: 85vh;
+        border-radius: 5px;
+    }
+
+    .close {
+        top: 15px;
+        right: 15px;
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal-content {
+        max-width: 98%;
+        max-height: 80vh;
+        border-radius: 3px;
+    }
+
+    .close {
+        top: 10px;
+        right: 10px;
+        font-size: 28px;
     }
 }
