@@ -7,114 +7,100 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- Hero Section -->
+    <!-- Section Hero -->
     <header class="hero">
         <nav>
             <h3 class="logo">Yassine.Dev</h3>
-                <ul class="nav-links">
-                    <li><a href="#projets">Projets</a></li>
-                    <li><a href="#apropos">À propos</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            <div class="burger">
+            <ul class="liens-navigation" aria-hidden="true">
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger" aria-label="Menu" aria-expanded="false">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
         </nav>
 
-
-        <div class="hero-content reveal">
-            <h1>Salut, moi c’est <span class="accent">Ahounou Yannick</span></h1>
-            <h2>Développeur Web Junior</h2>
-            <p>Je crée des applications web modernes, rapides et intuitives.</p>
-            <a href="#projets" class="btn">Voir mes projets</a>
+        <div class="hero-conteneur apparition">
+            <div class="contenu-hero">
+                <h1 id="h1">Salut, moi c'est <span class="accent">Ahounou Yannick</span></h1>
+                <h2>Développeur Web Junior</h2>
+                <p>Je crée des applications web modernes, rapides et intuitives.</p>
+                <div class="hero-boutons">
+                    <a href="#projets" class="btn">Voir mes projets</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- Section À propos -->
-    <section id="apropos" class="apropos reveal">
-        <h2 class="section-title">À propos de moi</h2>
-        <div class="apropos-container">
-            <img src="images/Yassine.jpg" alt="photo de Yassine">
+    <section id="apropos" class="apropos apparition">
+        <h2 class="titre-section">À propos de moi</h2>
+        <div class="conteneur-apropos">
+            <img src="images/Yassine.jpg" alt="Photo de Yassine">
             <div>
-                <p>
-                    Je suis étudiant en Génie logiciel et passionné par le développement web.  
-                    J’apprends activement à devenir développeur full stack en maîtrisant  
-                    HTML, CSS, JavaScript, PHP et MySQL.
-                </p>
-                <p>
-                    J’aime créer des interfaces propres, modernes et simples d’utilisation.  
-                    Mon objectif : transformer des idées en projets concrets et utiles.
-                </p>
+                <p>Je suis étudiant en Génie logiciel et passionné par le développement web. J’apprends activement à devenir développeur full stack en maîtrisant HTML, CSS, JavaScript, PHP et MySQL.</p>
+                <p>J’aime créer des interfaces propres, modernes et simples d’utilisation. Mon objectif : transformer des idées en projets concrets et utiles.</p>
             </div>
         </div>
     </section>
 
-    <!-- Section compétences -->
-    <section class="skills reveal">
-        <h2 class="section-title">Compétences</h2>
-
-        <div class="skills-grid">
-            <div class="skill-card">
+    <!-- Section Compétences -->
+    <section class="competences apparition">
+        <h2 class="titre-section">Compétences</h2>
+        <div class="grille-competences">
+            <div class="carte-competence">
                 <h3>Frontend</h3>
                 <p>HTML, CSS, JavaScript</p>
             </div>
-
-            <div class="skill-card">
+            <div class="carte-competence">
                 <h3>Backend</h3>
                 <p>PHP, MySQL</p>
             </div>
-
-            <div class="skill-card">
+            <div class="carte-competence">
                 <h3>Outils</h3>
                 <p>Git, GitHub, VS Code, WAMP, Photoshop</p>
             </div>
         </div>
     </section>
 
-    <!-- Section projets -->
-    <section id="projets" class="projets reveal">
-        <h2 class="section-title">Mes projets</h2>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <img src="images/carte_visite.png" alt="">
-                <h3> Ma carte de visite</h3>
-                <p> Présentation</p>
+    <!-- Section Projets -->
+    <section id="projets" class="projets apparition">
+        <h2 class="titre-section">Mes projets</h2>
+        <div class="grille-projets">
+            <div class="carte-projet">
+                <img src="images/carte_visite.png" alt="Carte de visite">
+                <h3>Ma carte de visite</h3>
+                <p>Présentation</p>
                 <div class="tags">HTML • CSS</div>
-                <a href="#" class="btn-small">GitHub</a>
+                <a href="https://github.com/Ahounou10/Carte_de_Visite.git" class="btn-petit">GitHub</a>
             </div>
-
-            <div class="project-card">
-                <img src="images/restaurant.png" alt="">
+            <div class="carte-projet">
+                <img src="images/restaurant.png" alt="Menu restaurant">
                 <h3>Menu d'un restaurant</h3>
                 <p>Utilisation de flexBox</p>
                 <div class="tags">HTML • CSS • JS</div>
-                <a href="#" class="btn-small">GitHub</a>
+                <a href="https://github.com/Ahounou10/Menu_restaurant.git" class="btn-petit">GitHub</a>
             </div>
-
-           
-
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact reveal">
-        <h2 class="section-title">Contact</h2>
+    <!-- Section Contact -->
+    <section id="contact" class="contact apparition">
+        <h2 class="titre-section">Contact</h2>
         <p>Email : <span class="accent">ahounouyannick@gmail.com</span></p>
-        <p>GitHub : <span class="accent">github.com/tonprofil</span></p>
-        <p>LinkedIn : <span class="accent">linkedin.com/in/tonprofil</span></p>
+        <p>GitHub : <span class="accent"><a href="https://github.com/Ahounou10">https://github.com/Ahounou10</a></span></p>
+        <p>LinkedIn : <span class="accent"><a href="https://linkedin.com/in/tonprofil">linkedin.com/in/tonprofil</a></span></p>
     </section>
 
     <!-- Modal pour zoom d'image -->
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage" alt="">
+    <div id="modalImageContainer" class="modal">
+        <span class="fermer">&times;</span>
+        <img class="contenu-modal" id="imageModal" alt="">
     </div>
 
     <script src="script.js"></script>
