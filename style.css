@@ -32,7 +32,16 @@ h1, h2, h3, h4, h5, h6 {
 .titre-section {
     text-align: center;
     font-size: 1.8rem;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+}
+
+.finsect {
+    border: none;
+    margin: 0 auto ;
+    height: 2px;
+    background: #66a1e0;
+    width: 95%;
+    border-radius: 2px;
 }
 
 @media screen and (max-width: 768px) {
@@ -57,9 +66,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 16px 6%;
     background: linear-gradient(90deg, #0052cc 0%, #0066ff 100%);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 50;
     box-shadow: 0 4px 12px rgba(0, 82, 204, 0.18);
@@ -292,6 +302,15 @@ nav {
     margin-bottom: 15px;
 }
 
+.apropos hr {
+    width: 25%;
+    height: 3px;
+    background: #007bff;
+    border: none;
+    margin: 0 auto 40px auto;
+    border-radius: 2px;
+}
+
 
 /* ====================================
    COMPÉTENCES
@@ -328,6 +347,14 @@ nav {
     font-size: 0.95rem;
 }
 
+.competences hr {
+    width: 20%;
+    height: 3px;
+    background: #007bff;
+    border: none;
+    margin: 0 auto 40px auto;
+    border-radius: 2px;
+}
 
 /* ====================================
    PROJETS
@@ -356,9 +383,13 @@ nav {
 
 .carte-projet img {
     width: 100%;
+    height: 250px;
     border-radius: 10px;
     margin-bottom: 10px;
+    object-fit: cover;
 }
+
+
 
 .carte-projet h3 {
     font-size: 1.2rem;
@@ -369,6 +400,15 @@ nav {
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 10px;
+}
+
+.projets hr {
+    width: 18%;
+    height: 3px;
+    background: #007bff;
+    border: none;
+    margin: 0 auto 40px auto;
+    border-radius: 2px;
 }
 
 .tags {
@@ -410,19 +450,58 @@ nav {
 .contact {
     padding: 90px 8%;
     text-align: center;
+    background: #f8f8f8;
+}
+
+
+.contact div {
+    margin: 0 auto;
+    background-color: #9fb7df;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    width: 45%;
+    padding: 25px 0;
+    text-align: center;
 }
 
 .contact p {
-    font-size: 1.05rem;
+    font-size: 1.05rem; 
     margin-bottom: 15px;
     text-decoration: none;
-
 }
 
+.contact p a:hover {
+    text-decoration: underline;
+}
 .contact p a {
     text-decoration: none;
     color: #007bff ;
 
+}
+
+.contact hr {
+    width: 15%;
+    height: 3px;
+    background: #007bff;
+    border: none;
+    margin: 0 auto 40px auto;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        padding: 60px 5%;
+    }
+
+    .contact div {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .contact p {
+        font-size: 0.95rem;
+        word-break: break-word;
+    }
 }
 
 
@@ -494,7 +573,7 @@ img[src*="images/"]:hover {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    
+    justify-content: center;
     gap: 100px;
    
 }
@@ -502,8 +581,13 @@ img[src*="images/"]:hover {
 .about {
    
     text-align: center;
-    width: 50%;
+    width: 40%;
     
+}
+
+.links {
+    
+    text-align: center;
 }
 
 
@@ -560,8 +644,9 @@ img[src*="images/"]:hover {
 @media screen and (max-width: 600px) {
     .footer-inner {
         grid-template-columns: 1fr;
-        gap: 18px;
+        gap: 15px;
         text-align: center;
+        font-size: smaller;
     }
 
     .footer-col a:hover {
