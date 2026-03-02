@@ -1,3 +1,27 @@
+// Typewriter effect pour le h1
+const h1Element = document.getElementById('h1');
+if (h1Element) {
+    h1Element.addEventListener('animationend', () => {
+        h1Element.style.borderRight = '3px solid transparent';
+    });
+}
+
+// Typewriter effect pour h2
+const h2Element = document.getElementById('h2');
+if (h2Element) {
+    h2Element.addEventListener('animationend', () => {
+        h2Element.style.borderRight = '2px solid transparent';
+    });
+}
+
+// Typewriter effect pour p
+const pElement = document.getElementById('p1');
+if (pElement) {
+    pElement.addEventListener('animationend', () => {
+        pElement.style.borderRight = '2px solid transparent';
+    });
+}
+
 // Apparition au scroll
 const elementsApparition = document.querySelectorAll(".apparition");
 function apparition() {
