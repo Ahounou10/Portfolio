@@ -94,26 +94,34 @@
     });
   }
 
-  let heroTyped = false;
+    let heroTyped = false;
   async function startHeroTypingOnce() {
     if (heroTyped) return;
     if (prefersReducedMotion) return;
+    if (!heroLines.length) return;
 
-    // If something is already typed, we still allow typing only once
     heroTyped = true;
 
-    // Speed tuning: faster for small screens/short text, slower for long text
+    // On cache toutes les lignes au départ
+    heroLines.forEach((el) => {
+      el.style.visibility = "hidden";
+    });
+
     const baseSpeed = window.innerWidth <= 480 ? 28 : 35;
 
     for (let i = 0; i < heroLines.length; i++) {
       const el = heroLines[i];
-      const originalSegments = buildSegments(el);
-      const totalLen = originalSegments.map((s) => s.content.length).reduce((a, b) => a + b, 0);
 
+      // On rend visible UNIQUEMENT la ligne en cours
+      el.style.visibility = "visible";
+
+      const segments = buildSegments(el);
+      const totalLen = segments.map((s) => s.content.length).reduce((a, b) => a + b, 0);
       const speed = Math.max(18, baseSpeed - Math.min(10, Math.floor(totalLen / 60)));
+
       await typewriterPreserveMarkup(el, speed);
 
-      // Small pause between lines
+      // petite pause avant la phrase suivante
       await new Promise((r) => window.setTimeout(r, 160));
     }
   }
