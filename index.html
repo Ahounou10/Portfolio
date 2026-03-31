@@ -1,252 +1,244 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Yassine</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0052cc" />
+  <title>Portfolio - Ahounou Yannick</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
+  <header class="hero">
+    <nav aria-label="Navigation principale">
+      <h3 class="logo">Yassine.Dev</h3>
 
-    <!-- Section Hero -->
-    <header class="hero">
-        <nav>
-            <h3 class="logo">Yassine.Dev</h3>
-            <ul class="liens-navigation" aria-hidden="true">
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger" aria-label="Menu" aria-expanded="false">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </nav>
+      <ul id="menu-mobile" class="liens-navigation">
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-        <div class="hero-conteneur apparition">
-            <div class="contenu-hero">
-                <div class="div_conther"><h1 id="h1">Salut, moi c'est <span class="accent">Ahounou Yannick</span></h1></div>
-                <div class="div_conther"><h2 id="h2">Développeur Web Junior</h2></div>
-                <div class="div_conther"><p id="p1">Je crée des Sites, applications web modernes, rapides et intuitives.</p></div>
-                <div class="hero-boutons">
-                    <a href="#projets" class="btn">Voir mes projets </a>
-                </div>
-            </div>
+      <button
+        class="burger"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="menu-mobile"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </nav>
 
-            <div class="animation-hero">
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-                <div class="binary">1</div>
-                <div class="binary">0</div>
-            </div>
-            
+    <div class="hero-conteneur apparition">
+      <div class="contenu-hero">
+        <div class="div_conther">
+          <h1 id="h1">Salut, moi c'est <span class="accent">Ahounou Yannick</span></h1>
         </div>
-    </header><hr class="finsect">
 
-    <!-- Section À propos -->
+        <div class="div_conther">
+          <h2 id="h2">Développeur Web Junior</h2>
+        </div>
+
+        <div class="div_conther">
+          <p id="p1">Je crée des sites et applications web modernes, rapides et intuitives.</p>
+        </div>
+
+        <div class="hero-boutons">
+          <a href="#projets" class="btn">Voir mes projets</a>
+        </div>
+      </div>
+
+      <!-- Les 0/1 sont générés automatiquement par JS -->
+      <div class="animation-hero" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <hr class="finsect" />
+
+  <main>
     <section id="apropos" class="apropos apparition">
-        <h2 class="titre-section">À propos de moi</h2><hr>
-        <div class="conteneur-apropos">
-            <img src="images/Yassine.jpg" alt="Photo de Yassine">
-            <div>
-                <p>Je suis étudiant en Génie logiciel et passionné par le développement web. J’apprends activement à devenir développeur full stack en maîtrisant HTML, CSS, JavaScript, PHP et MySQL.</p>
-                <p>J’aime créer des interfaces propres, modernes et simples d’utilisation. Mon objectif : transformer des idées en projets concrets et utiles.</p>
-            </div>
-        </div>
-    </section><hr class="finsect">
+      <h2 class="titre-section">À propos de moi</h2>
+      <hr />
 
-    <!-- Section Compétences -->
-    <section class="competences apparition">
-        <h2 class="titre-section">Compétences</h2><hr>
-        <div class="grille-competences">
-            <div class="carte-competence">
-                <h3>Frontend</h3>
-                <p>HTML, CSS, JavaScript</p>
-            </div>
-            <div class="carte-competence">
-                <h3>Backend</h3>
-                <p>PHP, MySQL</p>
-            </div>
-            <div class="carte-competence">
-                <h3>Outils</h3>
-                <p>Git, GitHub, VS Code, WAMP, Photoshop</p>
-            </div>
-        </div>
-    </section><hr class="finsect">
-
-    <!-- Section Projets -->
-    <section id="projets" class="projets apparition">
-        <h2 class="titre-section">Mes projets</h2><hr>
-        <div class="grille-projets">
-            <div class="carte-projet">
-                <img src="images/carte_visite.png" alt="Carte de visite">
-                <h3>Ma carte de visite</h3>
-                <p>Présentation</p>
-                <div class="tags">HTML • CSS</div>
-                <a href="https://github.com/Ahounou10/Carte_de_Visite.git" class="btn-petit">GitHub</a>
-                <a href="https://ahounou10.github.io/Carte_de_Visite/" class="btn-petit">Aperçu</a>
-            </div>
-
-             <div class="carte-projet">
-                <img src="images/citation.png" alt="citation">
-                <h3>Citations motivantes</h3>
-                <p>Utilisation d'une banque d'icones (Font Awesome) </p>
-                <div class="tags">HTML • CSS </div>
-                <a href="https://github.com/Ahounou10/Citation" class="btn-petit">GitHub</a>
-                <a href="https://ahounou10.github.io/Citation/" class="btn-petit">Aperçu</a>
-            </div>
-
-            <div class="carte-projet">
-                <img src="images/restaurant.png" alt="Menu restaurant">
-                <h3>Menu d'un restaurant</h3>
-                <p>Utilisation de flexBox</p>
-                <div class="tags">HTML • CSS • JS</div>
-                <a href="https://github.com/Ahounou10/Menu_restaurant.git" class="btn-petit">GitHub</a>
-                <a href="https://ahounou10.github.io/Menu_restaurant/" class="btn-petit">Aperçu</a>
-            </div>
-
-        </div>
-    </section><hr class="finsect">
-
-    
-
-    <!-- Section Contact -->
-    <section id="contact" class="contact apparition">
-        <h2 class="titre-section">Contact</h2><hr>
+      <div class="conteneur-apropos">
+        <img src="images/Yassine.jpg" alt="Photo de Ahounou Yannick" />
         <div>
-            <p>Email : <span class="accent"><a href="mailto:ahounouyannick@gmail.com">ahounouyannick@gmail.com</a></span></p>
-            <p>GitHub : <span class="accent"><a href="https://github.com/Ahounou10">https://github.com/Ahounou10</a></span></p>
-            <p>LinkedIn : <span class="accent"><a href="https://linkedin.com/in/tonprofil">linkedin.com/in/tonprofil</a></span></p>
+          <p>
+            Je suis étudiant en génie logiciel et passionné par le développement web.
+            J’apprends activement à devenir développeur full stack en maîtrisant HTML, CSS,
+            JavaScript, PHP et MySQL.
+          </p>
+          <p>
+            J’aime créer des interfaces propres, modernes et simples d’utilisation.
+            Mon objectif : transformer des idées en projets concrets et utiles.
+          </p>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-inner">
-            <div class="footer-col about">
-                <h3>Yassine.Dev</h3>
-                <p>Développeur Web junior, j'aime créer des interfaces modernes, accessibles et rapides.</p>
-            </div>
+    <hr class="finsect" />
 
-            <div class="footer-col links">
-                <h4>Liens utiles</h4>
-                <ul>
-                    <li><a href="#projets">Projets</a></li>
-                    <li><a href="#apropos">À propos</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <section class="competences apparition">
+      <h2 class="titre-section">Compétences</h2>
+      <hr />
 
-            
+      <div class="grille-competences">
+        <div class="carte-competence">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript</p>
         </div>
 
-        <div class="footer-bottom">
-            <p>© 2025 Ahounou Yannick — Tous droits réservés</p>
+        <div class="carte-competence">
+          <h3>Backend</h3>
+          <p>PHP, MySQL</p>
         </div>
-    </footer>
 
-    <!-- Modal pour zoom d'image -->
-    <div id="modalImageContainer" class="modal">
-        <span class="fermer">&times;</span>
-        <img class="contenu-modal" id="imageModal" alt="">
+        <div class="carte-competence">
+          <h3>Outils</h3>
+          <p>Git, GitHub, VS Code, WAMP, Photoshop</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="finsect" />
+
+    <section id="projets" class="projets apparition">
+      <h2 class="titre-section">Mes projets</h2>
+      <hr />
+
+      <div class="grille-projets">
+        <article class="carte-projet">
+          <img src="images/carte_visite.png" alt="Carte de visite" />
+          <h3>Ma carte de visite</h3>
+          <p>Présentation</p>
+          <div class="tags">HTML - CSS</div>
+          <a
+            href="https://github.com/Ahounou10/Carte_de_Visite.git"
+            class="btn-petit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub</a>
+          <a
+            href="https://ahounou10.github.io/Carte_de_Visite/"
+            class="btn-petit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Aperçu</a>
+        </article>
+
+        <article class="carte-projet">
+          <img src="images/citation.png" alt="Citations motivantes" />
+          <h3>Citations motivantes</h3>
+          <p>Utilisation d’une banque d’icônes (Font Awesome)</p>
+          <div class="tags">HTML - CSS</div>
+          <a
+            href="https://github.com/Ahounou10/Citation"
+            class="btn-petit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub</a>
+          <a
+            href="https://ahounou10.github.io/Citation/"
+            class="btn-petit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Aperçu</a>
+        </article>
+
+        <article class="carte-projet">
+          <img src="images/restaurant.png" alt="Menu d’un restaurant" />
+          <h3>Menu d’un restaurant</h3>
+          <p>Utilisation de Flexbox</p>
+          <div class="tags">HTML - CSS - JS</div>
+          <a
+            href="https://github.com/Ahounou10/Menu_restaurant.git"
+            class="btn-petit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub</a>
+          <a
+            href="https://ahounou10.github.io/Menu_restaurant/"
+            class="btn-petit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Aperçu</a>
+        </article>
+      </div>
+    </section>
+
+    <hr class="finsect" />
+
+    <section id="contact" class="contact apparition">
+      <h2 class="titre-section">Contact</h2>
+      <hr />
+
+      <div>
+        <p>
+          Email :
+          <span class="accent">
+            <a href="mailto:ahounouyannick@gmail.com">ahounouyannick@gmail.com</a>
+          </span>
+        </p>
+        <p>
+          GitHub :
+          <span class="accent">
+            <a href="https://github.com/Ahounou10" target="_blank" rel="noopener noreferrer">
+              github.com/Ahounou10
+            </a>
+          </span>
+        </p>
+        <p>
+          LinkedIn :
+          <span class="accent">
+            <a href="https://linkedin.com/in/tonprofil" target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/tonprofil
+            </a>
+          </span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col about">
+        <h3>Yassine.Dev</h3>
+        <p>Développeur web junior, j’aime créer des interfaces modernes, accessibles et rapides.</p>
+      </div>
+
+      <div class="footer-col links">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ahounou Yannick - Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <div
+    id="modalImageContainer"
+    class="modal"
+    aria-hidden="true"
+    role="dialog"
+    aria-label="Aperçu de l’image"
+  >
+    <button class="fermer" type="button" aria-label="Fermer">&times;</button>
+    <img class="contenu-modal" id="imageModal" alt="" />
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
