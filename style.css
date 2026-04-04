@@ -688,9 +688,7 @@ nav {
     border-top: 1px solid rgba(255, 255, 255, 0.04);
 }
 
-/* ====================================
-   RESPONSIVE
-   ==================================== */
+
 @media screen and (max-width: 1024px) {
     .hero-conteneur {
         gap: 28px;
