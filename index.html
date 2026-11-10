@@ -3,241 +3,222 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0052cc" />
-  <title>Portfolio - Ahounou Yannick</title>
-
+  <meta name="theme-color" content="#101214" />
+  <meta name="description" content="Portfolio d'Ahounou Yannick, développeur web junior : profil, compétences et projets réalisés en développement web." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ahounou Yannick — Développeur web junior" />
+  <meta property="og:description" content="Découvrez mon parcours, mes compétences et mes projets web." />
+  <title>Ahounou Yannick — Développeur web junior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-    rel="stylesheet"
-  />
 </head>
 <body>
-  <header class="hero">
-    <nav aria-label="Navigation principale">
-      <h3 class="logo">Yassine.Dev</h3>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-      <ul id="menu-mobile" class="liens-navigation">
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header class="site-header">
+    <nav class="navigation shell" aria-label="Navigation principale">
+      <a class="identite" href="#accueil" aria-label="Accueil — Ahounou Yannick">
+        <span class="identite-marque">AY</span>
+        <span class="identite-nom">Yassine<span class="identite-point">.</span>Dev</span>
+      </a>
 
-      <button
-        class="burger"
-        type="button"
-        aria-label="Ouvrir le menu"
-        aria-expanded="false"
-        aria-controls="menu-mobile"
-      >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+      <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span>
       </button>
+
+      <ul id="menu-principal" class="liens-navigation">
+        <li><a href="#projets">Projets <span>01</span></a></li>
+        <li><a href="#apropos">À propos <span>02</span></a></li>
+        <li><a href="#competences">Compétences <span>03</span></a></li>
+        <li><a class="lien-contact" href="#contact">Me contacter <span aria-hidden="true">↗</span></a></li>
+      </ul>
     </nav>
-
-    <div class="hero-conteneur apparition">
-      <div class="contenu-hero">
-        <div class="div_conther">
-          <h1 id="h1">Salut, moi c'est <span class="accent">Ahounou Yannick</span></h1>
-        </div>
-
-        <div class="div_conther">
-          <h2 id="h2">Développeur Web Junior</h2>
-        </div>
-
-        <div class="div_conther">
-          <p id="p1">Je crée des sites et applications web modernes, rapides et intuitives.</p>
-        </div>
-
-        <div class="hero-boutons">
-          <a href="#projets" class="btn">Voir mes projets</a>
-        </div>
-      </div>
-
-      <!-- Les 0/1 sont générés automatiquement par JS -->
-      <div class="animation-hero" aria-hidden="true"></div>
-    </div>
   </header>
 
-  <hr class="finsect" />
+  <main id="contenu">
+    <section class="hero shell" id="accueil" aria-labelledby="titre-principal">
+      <div class="hero-meta reveal">
+        <span class="sur-titre"><span class="point-statut"></span> Portfolio personnel · Côte d’Ivoire</span>
+        <span class="index-section">PORTFOLIO / 2026</span>
+      </div>
 
-  <main>
-    <section id="apropos" class="apropos apparition">
-      <h2 class="titre-section">À propos de moi</h2>
-      <hr />
+      <div class="hero-grille">
+        <div class="hero-texte reveal">
+          <p class="petit-label">Bonjour, je suis</p>
+          <h1 id="titre-principal">Ahounou<br /><span>Yannick.</span></h1>
+          <div class="hero-bas">
+            <p class="hero-role">Développeur web junior<br />Étudiant en génie logiciel</p>
+            <p class="hero-description">J’apprends en construisant. Je transforme des idées en interfaces web claires, utiles et accessibles, une étape à la fois.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="bouton bouton-principal" href="#projets">Découvrir mes projets <span aria-hidden="true">↘</span></a>
+            <a class="lien-simple" href="#contact">Entrer en contact <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
 
-      <div class="conteneur-apropos">
-        <img src="images/Yassine.jpg" alt="Photo de Ahounou Yannick" />
+        <aside class="hero-aside reveal" aria-label="Présentation">
+          <div class="portrait-cadre">
+            <img src="images/Yassine.jpg" alt="Portrait d’Ahounou Yannick" />
+            <span class="portrait-index">FIG. 01 — PROFIL</span>
+          </div>
+          <div class="note-marge">
+            <span class="note-numero">01 / 03</span>
+            <p>Curieux du web, attentif aux détails et motivé par les projets concrets.</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero-pied reveal">
+        <span>HTML · CSS · JAVASCRIPT · PHP · MYSQL</span>
+        <a href="#apropos" aria-label="Faire défiler vers la section À propos">DÉFILER POUR EXPLORER <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="section-projets section-shell" id="projets" aria-labelledby="titre-projets">
+      <div class="section-entete shell reveal">
         <div>
-          <p>
-            Je suis étudiant en génie logiciel et passionné par le développement web.
-            J’apprends activement à devenir développeur full stack en maîtrisant HTML, CSS,
-            JavaScript, PHP et MySQL.
-          </p>
-          <p>
-            J’aime créer des interfaces propres, modernes et simples d’utilisation.
-            Mon objectif : transformer des idées en projets concrets et utiles.
-          </p>
+          <p class="sur-titre">01 — SÉLECTION</p>
+          <h2 id="titre-projets">Des idées,<br /><span>du concret.</span></h2>
+        </div>
+        <p class="section-intro">Quelques exercices et réalisations qui marquent mon apprentissage du développement web.</p>
+      </div>
+
+      <div class="liste-projets shell">
+        <article class="projet reveal">
+          <a class="projet-visuel" href="https://ahounou10.github.io/Menu_restaurant/" target="_blank" rel="noopener noreferrer" aria-label="Voir la démonstration du menu restaurant">
+            <img src="images/restaurant.png" alt="Aperçu du menu d’un restaurant" loading="lazy" />
+            <span class="visuel-action" aria-hidden="true">↗</span>
+          </a>
+          <div class="projet-infos">
+            <div class="projet-numero">01</div>
+            <div class="projet-description">
+              <p class="projet-categorie">INTERFACE WEB · EXERCICE</p>
+              <h3>Menu restaurant</h3>
+              <p>Une interface de menu construite pour travailler l’organisation du contenu et la mise en page avec Flexbox, accompagnée de quelques interactions JavaScript.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <div class="projet-liens">
+              <a href="https://github.com/Ahounou10/Menu_restaurant" target="_blank" rel="noopener noreferrer">Code source <span>↗</span></a>
+              <a href="https://ahounou10.github.io/Menu_restaurant/" target="_blank" rel="noopener noreferrer">Démo <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="projet reveal">
+          <a class="projet-visuel projet-visuel-clair" href="https://ahounou10.github.io/Citation/" target="_blank" rel="noopener noreferrer" aria-label="Voir la démonstration des citations motivantes">
+            <img src="images/citation.png" alt="Aperçu du projet de citations motivantes" loading="lazy" />
+            <span class="visuel-action" aria-hidden="true">↗</span>
+          </a>
+          <div class="projet-infos">
+            <div class="projet-numero">02</div>
+            <div class="projet-description">
+              <p class="projet-categorie">MISE EN PAGE · EXERCICE</p>
+              <h3>Citations motivantes</h3>
+              <p>Une petite page dédiée aux citations, réalisée pour pratiquer la structuration HTML, le style CSS et l’intégration d’une bibliothèque d’icônes.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>Font Awesome</span></div>
+            </div>
+            <div class="projet-liens">
+              <a href="https://github.com/Ahounou10/Citation" target="_blank" rel="noopener noreferrer">Code source <span>↗</span></a>
+              <a href="https://ahounou10.github.io/Citation/" target="_blank" rel="noopener noreferrer">Démo <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="projet reveal">
+          <a class="projet-visuel" href="https://ahounou10.github.io/Carte_de_Visite/" target="_blank" rel="noopener noreferrer" aria-label="Voir la démonstration de la carte de visite">
+            <img src="images/carte_visite.png" alt="Aperçu de la carte de visite" loading="lazy" />
+            <span class="visuel-action" aria-hidden="true">↗</span>
+          </a>
+          <div class="projet-infos">
+            <div class="projet-numero">03</div>
+            <div class="projet-description">
+              <p class="projet-categorie">PREMIÈRES BASES · EXERCICE</p>
+              <h3>Carte de visite</h3>
+              <p>Une première réalisation pour présenter des informations personnelles dans une composition simple et travailler les bases de HTML et CSS.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span></div>
+            </div>
+            <div class="projet-liens">
+              <a href="https://github.com/Ahounou10/Carte_de_Visite" target="_blank" rel="noopener noreferrer">Code source <span>↗</span></a>
+              <a href="https://ahounou10.github.io/Carte_de_Visite/" target="_blank" rel="noopener noreferrer">Démo <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="projets-note shell reveal"><span>À SUIVRE</span> De nouveaux projets viendront enrichir cette sélection au fil de mon parcours.</p>
+    </section>
+
+    <section class="section-apropos section-shell" id="apropos" aria-labelledby="titre-apropos">
+      <div class="shell apropos-grille">
+        <div class="apropos-titre reveal">
+          <p class="sur-titre">02 — QUI SUIS-JE ?</p>
+          <h2 id="titre-apropos">Apprendre.<br />Pratiquer.<br /><span>Progresser.</span></h2>
+        </div>
+        <div class="apropos-contenu reveal">
+          <p class="texte-lead">Je suis étudiant en génie logiciel et je m’intéresse particulièrement au développement web.</p>
+          <p>J’avance en consolidant les fondamentaux : comprendre comment une page est construite, rendre une interface agréable à utiliser, puis donner vie aux fonctionnalités avec le code.</p>
+          <p>Mon objectif est de développer progressivement mes compétences front-end et back-end, et de les mettre à l’épreuve dans des projets utiles et bien construits.</p>
+          <a class="lien-simple" href="#contact">Discutons d’un projet <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
 
-    <hr class="finsect" />
-
-    <section class="competences apparition">
-      <h2 class="titre-section">Compétences</h2>
-      <hr />
-
-      <div class="grille-competences">
-        <div class="carte-competence">
-          <h3>Frontend</h3>
-          <p>HTML, CSS, JavaScript</p>
+    <section class="section-competences section-shell" id="competences" aria-labelledby="titre-competences">
+      <div class="shell">
+        <div class="section-entete section-entete-compacte reveal">
+          <div>
+            <p class="sur-titre">03 — BOÎTE À OUTILS</p>
+            <h2 id="titre-competences">Ce que<br /><span>j’utilise.</span></h2>
+          </div>
+          <p class="section-intro">Les technologies et outils que je mobilise dans mes exercices et projets personnels.</p>
         </div>
 
-        <div class="carte-competence">
-          <h3>Backend</h3>
-          <p>PHP, MySQL</p>
+        <div class="competences-liste reveal">
+          <div class="competence-ligne">
+            <span class="competence-index">01</span>
+            <h3>Frontend</h3>
+            <p>HTML · CSS · JavaScript</p>
+          </div>
+          <div class="competence-ligne">
+            <span class="competence-index">02</span>
+            <h3>Backend & données</h3>
+            <p>PHP · MySQL</p>
+          </div>
+          <div class="competence-ligne">
+            <span class="competence-index">03</span>
+            <h3>Outils</h3>
+            <p>Git · GitHub · VS Code · WAMP</p>
+          </div>
+          <div class="competence-ligne">
+            <span class="competence-index">04</span>
+            <h3>Création visuelle</h3>
+            <p>Canva · Photoshop</p>
+          </div>
         </div>
-
-        <div class="carte-competence">
-          <h3>Outils</h3>
-          <p>Git, GitHub, VS Code, WAMP, Photoshop</p>
-        </div>
+        <p class="competences-precision">Cette liste reflète les outils que j’utilise actuellement. Je continue à approfondir leur maîtrise à travers la pratique.</p>
       </div>
     </section>
 
-    <hr class="finsect" />
-
-    <section id="projets" class="projets apparition">
-      <h2 class="titre-section">Mes projets</h2>
-      <hr />
-
-      <div class="grille-projets">
-        <article class="carte-projet">
-          <img src="images/carte_visite.png" alt="Carte de visite" />
-          <h3>Ma carte de visite</h3>
-          <p>Présentation</p>
-          <div class="tags">HTML - CSS</div>
-          <a
-            href="https://github.com/Ahounou10/Carte_de_Visite.git"
-            class="btn-petit"
-            target="_blank"
-            rel="noopener noreferrer"
-          >GitHub</a>
-          <a
-            href="https://ahounou10.github.io/Carte_de_Visite/"
-            class="btn-petit"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Aperçu</a>
-        </article>
-
-        <article class="carte-projet">
-          <img src="images/citation.png" alt="Citations motivantes" />
-          <h3>Citations motivantes</h3>
-          <p>Utilisation d’une banque d’icônes (Font Awesome)</p>
-          <div class="tags">HTML - CSS</div>
-          <a
-            href="https://github.com/Ahounou10/Citation"
-            class="btn-petit"
-            target="_blank"
-            rel="noopener noreferrer"
-          >GitHub</a>
-          <a
-            href="https://ahounou10.github.io/Citation/"
-            class="btn-petit"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Aperçu</a>
-        </article>
-
-        <article class="carte-projet">
-          <img src="images/restaurant.png" alt="Menu d’un restaurant" />
-          <h3>Menu d’un restaurant</h3>
-          <p>Utilisation de Flexbox</p>
-          <div class="tags">HTML - CSS - JS</div>
-          <a
-            href="https://github.com/Ahounou10/Menu_restaurant.git"
-            class="btn-petit"
-            target="_blank"
-            rel="noopener noreferrer"
-          >GitHub</a>
-          <a
-            href="https://ahounou10.github.io/Menu_restaurant/"
-            class="btn-petit"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Aperçu</a>
-        </article>
-      </div>
-    </section>
-
-    <hr class="finsect" />
-
-    <section id="contact" class="contact apparition">
-      <h2 class="titre-section">Contact</h2>
-      <hr />
-
-      <div>
-        <p>
-          Email :
-          <span class="accent">
-            <a href="mailto:ahounouyannick@gmail.com">ahounouyannick@gmail.com</a>
-          </span>
-        </p>
-        <p>
-          GitHub :
-          <span class="accent">
-            <a href="https://github.com/Ahounou10" target="_blank" rel="noopener noreferrer">
-              github.com/Ahounou10
-            </a>
-          </span>
-        </p>
-        <p>
-          LinkedIn :
-          <span class="accent">
-            <a href="https://www.linkedin.com/in/yannick-ahounou-80495b37b/" target="_blank" rel="noopener noreferrer">
-              linkedin.com/in/yannick-ahounou-80495b37b
-            </a>
-          </span>
-        </p>
+    <section class="section-contact section-shell" id="contact" aria-labelledby="titre-contact">
+      <div class="shell contact-bloc reveal">
+        <p class="sur-titre">04 — PRENONS CONTACT</p>
+        <h2 id="titre-contact">Une idée en tête ?<br /><span>Parlons-en.</span></h2>
+        <p class="contact-intro">Pour échanger autour du développement web, d’un projet ou d’une opportunité, tu peux me retrouver ici :</p>
+        <div class="contact-liens">
+          <a href="mailto:ahounouyannick@gmail.com"><span>Email</span><strong>ahounouyannick@gmail.com</strong><span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/Ahounou10" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>github.com/Ahounou10</strong><span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/yannick-ahounou-80495b37b/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>Profil LinkedIn</strong><span aria-hidden="true">↗</span></a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-col about">
-        <h3>Yassine.Dev</h3>
-        <p>Développeur web junior, j’aime créer des interfaces modernes, accessibles et rapides.</p>
-      </div>
-
-      <div class="footer-col links">
-        <h4>Liens utiles</h4>
-        <ul>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#apropos">À propos</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2025 Ahounou Yannick - Tous droits réservés</p>
-    </div>
+  <footer class="site-footer shell">
+    <a class="identite footer-identite" href="#accueil"><span class="identite-marque">AY</span><span class="identite-nom">Yassine<span class="identite-point">.</span>Dev</span></a>
+    <p>Conçu et développé avec attention.</p>
+    <span>© <span id="annee">2026</span> Ahounou Yannick</span>
   </footer>
-
-  <div
-    id="modalImageContainer"
-    class="modal"
-    aria-hidden="true"
-    role="dialog"
-    aria-label="Aperçu de l’image"
-  >
-    <button class="fermer" type="button" aria-label="Fermer">&times;</button>
-    <img class="contenu-modal" id="imageModal" alt="" />
-  </div>
 
   <script src="script.js"></script>
 </body>
