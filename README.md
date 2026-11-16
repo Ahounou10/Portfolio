@@ -56,13 +56,14 @@ Portfolio/
 │   ├── carte_visite.png
 │   ├── citation.png
 │   └── restaurant.png
-├── projets/
-│   ├── menu-restaurant.html
-│   ├── citations-motivantes.html
-│   └── carte-de-visite.html
+├── images/
+│   └── projets/
+│       └── README.md
 ├── index.html
-├── style.css
+├── projet.html
+├── projets.js
 ├── projet-detail.css
+├── style.css
 ├── script.js
 └── README.md
 ```
