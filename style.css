@@ -132,7 +132,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .section-competences { padding-block: 10px 110px; background: var(--fond-secondaire); }
 .section-entete-compacte { padding-top: 100px; }
 .competences-liste { border-top: 1px solid var(--ligne); }
-.competence-ligne { display: grid; grid-template-columns: minmax(160px, .8fr) 1fr; align-items: center; gap: 24px; } padding: 23px 0; border-bottom: 1px solid var(--ligne); }
+.competence-ligne { display: grid; grid-template-columns: minmax(160px, .8fr) 1fr; align-items: center; gap: 24px; padding: 23px 0; border-bottom: 1px solid var(--ligne); }
 .competence-ligne h3 { font-size: 16px; letter-spacing: -.03em; }
 .competence-ligne p { color: var(--texte-doux); font-size: 13px; }
 .competences-precision { margin-top: 18px; color: var(--texte-faible); font-size: 11px; }
@@ -174,7 +174,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .liens-navigation .lien-contact { margin-top: 12px; padding-inline: 12px; border: 1px solid var(--ligne); }
   .hero { min-height: auto; }
   .hero-grille { grid-template-columns: 1fr minmax(180px, .55fr); gap: 30px; padding-block: 80px; }
-  .hero h1 { font-size: clamp(58px, 10vw, 90px); }
+  .hero h1 { font-size: clamp(54px, 9vw, 82px); }
   .hero-bas { grid-template-columns: 1fr; gap: 12px; margin-top: 28px; }
   .hero-aside { width: 100%; }
   .note-marge { gap: 10px; }
@@ -184,19 +184,30 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .apropos-grille { gap: 45px; }
 }
 
+@media (max-width: 680px) {
+  .hero-grille { grid-template-columns: 1fr; gap: 42px; padding-block: 64px 48px; }
+  .hero-aside { width: min(72%, 280px); justify-self: center; }
+  .projet { grid-template-columns: 1fr; gap: 20px; }
+  .projet-visuel, .projet-visuel img { min-height: 0; aspect-ratio: 16 / 10; }
+  .projet-infos { grid-template-columns: minmax(0, 1fr); }
+  .projet-liens { grid-column: 1; flex-direction: row; gap: 20px; }
+  .section-entete h2, .apropos-titre h2 { font-size: clamp(42px, 8vw, 62px); }
+  .contact-bloc h2 { font-size: clamp(44px, 9vw, 68px); }
+}
+
 @media (max-width: 560px) {
   :root { --marge: 22px; }
   .hero { padding-top: 24px; }
   .hero-meta { align-items: flex-start; }
   .hero-grille { grid-template-columns: 1fr; gap: 38px; padding-block: 62px 46px; }
-  .hero h1 { font-size: clamp(64px, 17vw, 94px); }
+  .hero h1 { font-size: clamp(52px, 15vw, 72px); }
   .hero-aside { width: min(76%, 270px); justify-self: start; margin-left: 12%; }
   .hero-pied { align-items: flex-start; font-size: 9px; }
   .hero-pied span { max-width: 55%; line-height: 1.8; }
   .hero-pied a { max-width: 45%; text-align: right; font-size: 9px; }
   .hero-actions { flex-wrap: wrap; gap: 18px; }
   .section-entete { align-items: flex-start; flex-direction: column; gap: 22px; padding-top: 72px; padding-bottom: 34px; }
-  .section-entete h2, .apropos-titre h2 { font-size: clamp(48px, 14vw, 66px); }
+  .section-entete h2, .apropos-titre h2 { font-size: clamp(40px, 12vw, 56px); }
   .section-intro { max-width: 390px; }
   .section-projets { padding-bottom: 70px; }
   .projet { grid-template-columns: 1fr; gap: 18px; padding-block: 25px; }
@@ -211,7 +222,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .competence-ligne { grid-template-columns: 1fr; gap: 8px; padding-block: 18px; }
   .competence-ligne p { grid-column: 1; }
   .section-contact { padding-block: 78px 70px; }
-  .contact-bloc h2 { font-size: clamp(49px, 14vw, 72px); }
+  .contact-bloc h2 { font-size: clamp(42px, 12vw, 60px); }
   .contact-liens a { grid-template-columns: 72px minmax(0,1fr) 14px; gap: 10px; }
   .contact-liens strong { font-size: 11px; }
   .site-footer { min-height: auto; padding-block: 24px; flex-wrap: wrap; }
