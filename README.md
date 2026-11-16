@@ -4,7 +4,7 @@ Portfolio personnel présentant mon profil, mes compétences et mes projets en d
 
 ## Direction visuelle
 
-Le site adopte une identité sombre et éditoriale : typographie expressive, mise en page aérée, détails typographiques et accent vert doux. L'objectif est de présenter le parcours et les réalisations de façon personnelle, lisible et sans effets décoratifs superflus.
+Le site adopte une identité sombre et éditoriale : typographie expressive, mise en page aérée, détails typographiques et accent bleu doux. L'objectif est de présenter le parcours et les réalisations de façon personnelle, lisible et sans effets décoratifs superflus.
 
 ## Technologies
 
@@ -17,7 +17,7 @@ Les polices Manrope et DM Mono sont chargées depuis Google Fonts. Le site reste
 ## Contenu
 
 - Présentation personnelle ;
-- Sélection de projets avec captures, technologies, code source et démonstrations ;
+- Sélection de projets avec aperçu, technologies, code source, démonstration et pages de présentation détaillées ;
 - Présentation des compétences et outils utilisés ;
 - Liens de contact ;
 - Navigation adaptée aux écrans mobiles.
@@ -32,7 +32,7 @@ Les polices Manrope et DM Mono sont chargées depuis Google Fonts. Le site reste
 
 Les descriptions du portfolio restent volontairement limitées aux éléments connus de ces réalisations. Elles pourront être enrichies avec les fonctionnalités réellement présentes dans chaque dépôt.
 
-## Lancer le projet en local
+Chaque page de projet possède une structure commune. Les sections de galerie sont déjà prévues dans le HTML et resteront masquées jusqu’à l’ajout des captures réelles.\n\n## Lancer le projet en local
 
 1. Cloner le dépôt :
 
@@ -54,8 +54,13 @@ Portfolio/
 │   ├── carte_visite.png
 │   ├── citation.png
 │   └── restaurant.png
+├── projets/
+│   ├── menu-restaurant.html
+│   ├── citations-motivantes.html
+│   └── carte-de-visite.html
 ├── index.html
 ├── style.css
+├── projet-detail.css
 ├── script.js
 └── README.md
 ```
