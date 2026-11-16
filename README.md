@@ -32,7 +32,9 @@ Les polices Manrope et DM Mono sont chargées depuis Google Fonts. Le site reste
 
 Les descriptions du portfolio restent volontairement limitées aux éléments connus de ces réalisations. Elles pourront être enrichies avec les fonctionnalités réellement présentes dans chaque dépôt.
 
-Chaque page de projet possède une structure commune. Les sections de galerie sont déjà prévues dans le HTML et resteront masquées jusqu’à l’ajout des captures réelles.\n\n## Lancer le projet en local
+Chaque page de projet possède une structure commune. Les sections de galerie sont déjà prévues dans le HTML et resteront masquées jusqu’à l’ajout des captures réelles.
+
+## Lancer le projet en local
 
 1. Cloner le dépôt :
 
