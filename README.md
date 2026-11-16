@@ -32,7 +32,7 @@ Les polices Manrope et DM Mono sont chargées depuis Google Fonts. Le site reste
 
 Les descriptions du portfolio restent volontairement limitées aux éléments connus de ces réalisations. Elles pourront être enrichies avec les fonctionnalités réellement présentes dans chaque dépôt.
 
-Chaque page de projet possède une structure commune. Les sections de galerie sont déjà prévues dans le HTML et resteront masquées jusqu’à l’ajout des captures réelles.
+La présentation détaillée des projets repose sur un seul modèle (`projet.html`). Les informations de chaque réalisation sont centralisées dans `projets.js` et chargées grâce à un identifiant dans l’URL (par exemple `projet.html?id=menu-restaurant`). Pour ajouter un projet, il suffit donc d’ajouter ses données dans le catalogue et sa carte dans la page d’accueil. Les galeries restent masquées tant qu’aucune capture réelle n’a été ajoutée.
 
 ## Lancer le projet en local
 
