@@ -39,8 +39,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 .skip-link:focus { transform: translateY(0); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
-.sur-titre, .index-section, .hero-pied, .portrait-index, .note-numero,
-.projet-categorie, .projet-numero, .competence-index, .projets-note span {
+.sur-titre, .hero-pied, .portrait-index,
+.projet-categorie, .projets-note span {
   font-family: var(--mono); font-size: 11px; letter-spacing: .12em;
 }
 .sur-titre { display: inline-flex; align-items: center; gap: 10px; color: var(--texte-doux); }
@@ -54,9 +54,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .identite-nom { font-size: 14px; font-weight: 800; letter-spacing: -.04em; }
 .identite-point { color: var(--accent); }
 .liens-navigation { display: flex; align-items: center; gap: clamp(18px, 3vw, 42px); list-style: none; }
-.liens-navigation a { display: inline-flex; align-items: center; gap: 8px; color: var(--texte-doux); font-size: 12px; text-decoration: none; transition: color .2s ease; }
+.liens-navigation a { display: inline-flex; align-items: center; color: var(--texte-doux); font-size: 12px; text-decoration: none; transition: color .2s ease; }
 .liens-navigation a:hover { color: var(--accent); }
-.liens-navigation a span { color: var(--texte-faible); font: 9px var(--mono); }
 .liens-navigation .lien-contact { padding: 10px 14px; border: 1px solid var(--ligne); color: var(--texte); }
 .liens-navigation .lien-contact:hover { border-color: var(--accent); color: var(--accent); }
 .burger { display: none; }
@@ -64,7 +63,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 /* Hero */
 .hero { min-height: min(820px, calc(100svh - 76px)); padding-top: 36px; display: flex; flex-direction: column; }
 .hero-meta, .hero-pied { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
-.index-section, .hero-pied { color: var(--texte-faible); }
+.hero-pied { color: var(--texte-faible); }
 .hero-grille { flex: 1; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(240px, .65fr); align-items: center; gap: clamp(42px, 8vw, 120px); padding-block: clamp(58px, 9vh, 100px); }
 .hero-texte { min-width: 0; }
 .petit-label { margin-bottom: 16px; color: var(--texte-doux); font-size: 14px; }
@@ -108,8 +107,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .projet-visuel:hover img { transform: scale(1.035); opacity: .82; }
 .projet-visuel-clair { background: #e8e6df; }
 .visuel-action { position: absolute; right: 14px; bottom: 14px; display: grid; width: 36px; height: 36px; place-items: center; background: var(--accent); color: var(--fond); }
-.projet-infos { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 18px; align-items: start; padding-top: 8px; }
-.projet-numero { color: var(--accent); }
+.projet-infos { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px; align-items: start; padding-top: 8px; }
 .projet-categorie { margin-bottom: 10px; color: var(--texte-faible); font-size: 10px; }
 .projet-description h3 { margin-bottom: 12px; font-size: clamp(23px, 3vw, 32px); letter-spacing: -.055em; line-height: 1.2; }
 .projet-description > p:not(.projet-categorie) { max-width: 510px; color: var(--texte-doux); font-size: 13px; }
@@ -135,8 +133,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .section-competences { padding-block: 10px 110px; background: var(--fond-secondaire); }
 .section-entete-compacte { padding-top: 100px; }
 .competences-liste { border-top: 1px solid var(--ligne); }
-.competence-ligne { display: grid; grid-template-columns: 60px minmax(160px, .8fr) 1fr; align-items: center; gap: 24px; padding: 23px 0; border-bottom: 1px solid var(--ligne); }
-.competence-index { color: var(--accent); }
+.competence-ligne { display: grid; grid-template-columns: minmax(160px, .8fr) 1fr; align-items: center; gap: 24px; } padding: 23px 0; border-bottom: 1px solid var(--ligne); }
 .competence-ligne h3 { font-size: 16px; letter-spacing: -.03em; }
 .competence-ligne p { color: var(--texte-doux); font-size: 13px; }
 .competences-precision { margin-top: 18px; color: var(--texte-faible); font-size: 11px; }
@@ -183,8 +180,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-aside { width: 100%; }
   .note-marge { gap: 10px; }
   .projet { grid-template-columns: minmax(180px, .8fr) minmax(0, 1.2fr); gap: 24px; }
-  .projet-infos { grid-template-columns: 24px minmax(0,1fr); }
-  .projet-liens { grid-column: 2; flex-direction: row; gap: 20px; }
+  .projet-infos { grid-template-columns: minmax(0,1fr); }
+  .projet-liens { grid-column: 1; flex-direction: row; gap: 20px; }
   .apropos-grille { gap: 45px; }
 }
 
@@ -192,7 +189,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   :root { --marge: 22px; }
   .hero { padding-top: 24px; }
   .hero-meta { align-items: flex-start; }
-  .index-section { font-size: 9px; }
   .hero-grille { grid-template-columns: 1fr; gap: 38px; padding-block: 62px 46px; }
   .hero h1 { font-size: clamp(64px, 17vw, 94px); }
   .hero-aside { width: min(76%, 270px); justify-self: start; margin-left: 12%; }
@@ -206,15 +202,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .section-projets { padding-bottom: 70px; }
   .projet { grid-template-columns: 1fr; gap: 18px; padding-block: 25px; }
   .projet-visuel, .projet-visuel img { min-height: 0; aspect-ratio: 16 / 10; }
-  .projet-infos { grid-template-columns: 25px minmax(0,1fr); gap: 12px; }
+  .projet-infos { grid-template-columns: minmax(0,1fr); gap: 12px; }
   .projet-description h3 { font-size: 26px; }
   .apropos-grille { grid-template-columns: 1fr; gap: 10px; }
   .section-apropos { padding-block: 76px; }
   .apropos-contenu { padding-top: 15px; }
   .section-competences { padding-bottom: 75px; }
   .section-entete-compacte { padding-top: 72px; }
-  .competence-ligne { grid-template-columns: 30px 1fr; gap: 8px 14px; padding-block: 18px; }
-  .competence-ligne p { grid-column: 2; }
+  .competence-ligne { grid-template-columns: 1fr; gap: 8px; padding-block: 18px; }
+  .competence-ligne p { grid-column: 1; }
   .section-contact { padding-block: 78px 70px; }
   .contact-bloc h2 { font-size: clamp(49px, 14vw, 72px); }
   .contact-liens a { grid-template-columns: 72px minmax(0,1fr) 14px; gap: 10px; }
