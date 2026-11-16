@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101214" />
+  <meta name="description" content="Présentation détaillée d’un projet du portfolio d’Ahounou Yannick." />
+  <title>Projet — Portfolio d’Ahounou Yannick</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="projet-detail.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <nav class="navigation shell" aria-label="Navigation principale">
+      <a class="identite" href="index.html#accueil" aria-label="Accueil — Ahounou Yannick">
+        <span class="identite-marque">AY</span>
+        <span class="identite-nom">Yassine<span class="identite-point">.</span>Dev</span>
+      </a>
+      <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span>
+      </button>
+      <ul id="menu-principal" class="liens-navigation">
+        <li><a href="index.html#projets">Projets</a></li>
+        <li><a href="index.html#apropos">À propos</a></li>
+        <li><a href="index.html#competences">Compétences</a></li>
+        <li><a class="lien-contact" href="index.html#contact">Me contacter <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu" class="page-projet shell">
+    <nav class="fil-ariane" aria-label="Fil d’Ariane">
+      <a href="index.html">Accueil</a> / <a href="index.html#projets">Projets</a> / <span id="fil-projet">Projet</span>
+    </nav>
+
+    <div id="projet-contenu">
+      <header class="detail-entete">
+        <p class="detail-categorie" id="projet-categorie"></p>
+        <h1 id="projet-titre"></h1>
+        <p class="detail-chapeau" id="projet-description"></p>
+        <div class="detail-actions">
+          <a id="projet-demo" target="_blank" rel="noopener noreferrer">Voir la démonstration <span aria-hidden="true">↗</span></a>
+          <a id="projet-code" target="_blank" rel="noopener noreferrer">Code source sur GitHub ↗</a>
+        </div>
+      </header>
+
+      <figure class="detail-visuel">
+        <img id="projet-image" src="" alt="" />
+        <figcaption class="detail-legende">APERÇU DU PROJET</figcaption>
+      </figure>
+
+      <div class="detail-corps">
+        <div>
+          <section class="detail-section" aria-labelledby="detail-presentation">
+            <p class="detail-label">PRÉSENTATION</p>
+            <h2 id="detail-presentation">À propos du projet</h2>
+            <p id="projet-presentation"></p>
+          </section>
+          <section class="detail-section" aria-labelledby="detail-travail">
+            <p class="detail-label">DÉMARCHE</p>
+            <h2 id="detail-travail">Ce que j’ai travaillé</h2>
+            <p id="projet-demarche"></p>
+          </section>
+        </div>
+        <aside class="detail-aside" aria-label="Informations sur le projet">
+          <dl>
+            <div class="detail-info"><dt>Type</dt><dd id="projet-type"></dd></div>
+            <div class="detail-info"><dt>Technologies</dt><dd id="projet-technologies"></dd></div>
+            <div class="detail-info"><dt>Code source</dt><dd><a id="projet-code-aside" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></dd></div>
+            <div class="detail-info"><dt>Démonstration</dt><dd><a id="projet-demo-aside" target="_blank" rel="noopener noreferrer">Ouvrir le projet ↗</a></dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <section class="detail-galerie" id="projet-galerie" aria-labelledby="titre-captures" hidden>
+        <p class="detail-label">APERÇUS DE L’INTERFACE</p>
+        <h2 id="titre-captures">Le projet en images</h2>
+        <div class="detail-galerie-grille" id="projet-captures"></div>
+      </section>
+    </div>
+
+    <section id="projet-introuvable" hidden>
+      <h1>Projet introuvable</h1>
+      <p>Ce projet n’existe pas dans le portfolio ou le lien est incomplet.</p>
+    </section>
+
+    <a class="detail-retour" href="index.html#projets">← Retour à tous les projets</a>
+  </main>
+
+  <footer class="site-footer shell">
+    <a class="identite footer-identite" href="index.html#accueil"><span class="identite-marque">AY</span><span class="identite-nom">Yassine<span class="identite-point">.</span>Dev</span></a>
+    <p>Conçu et développé avec attention.</p>
+    <span>© <span id="annee">2026</span> Ahounou Yannick</span>
+  </footer>
+  <script src="script.js"></script>
+  <script src="projets.js"></script>
+</body>
+</html>
